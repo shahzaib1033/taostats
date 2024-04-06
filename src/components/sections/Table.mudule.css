@@ -1,0 +1,18 @@
+/* components/Table.module.css */
+
+/* Table cell styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: whitesmoke;
+}
+
+th,
+td {
+    /* border-bottom: 1px solid #000; */
+    padding: 8px;
+    text-align: left;
+}
+th,tr {
+    border-bottom: 1.6px solid gray;
+}

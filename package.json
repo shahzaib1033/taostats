@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "apexcharts": "^3.48.0",
+    "navigation-bar": "^0.0.7",
+    "next": "14.1.4",
     "react": "^18",
+    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-icons": "^5.0.1",
+    "recharts": "^2.12.4"
   }
 }

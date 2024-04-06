@@ -1,0 +1,12 @@
+.dark-graph {
+    margin-top: 40px;
+    margin: 20px;
+    background-color: red;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+    opacity: 1;
+    pointer-events: all;
+    transition: .15s ease all;
+    color: black !important;
+}

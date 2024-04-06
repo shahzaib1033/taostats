@@ -1,0 +1,103 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    fill: white;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+
+
+.nav-input {
+    position: relative;
+    cursor: text;
+    height: 30px;
+    background: #2E2E2E;
+    padding: 13px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 315px;
+    margin-right: 10px;
+}
+
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu span {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    display: block;
+    width: max-content;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
