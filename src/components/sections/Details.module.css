@@ -9,7 +9,7 @@
 .topOfPricingDetails {
     display: flex;
     gap: 5px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -63,7 +63,7 @@
 .itemOfSecondSection {
     color: gray;
     font-size: 14px;
-    text-align: start;
+    text-align: flex-start;
 }
 
 .secondSectionOfDetails {
@@ -76,7 +76,7 @@
 .semi-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 3px;
     /* Center align items horizontally */
 }
