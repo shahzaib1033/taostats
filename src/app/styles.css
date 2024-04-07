@@ -35,7 +35,7 @@ width: 100%;
 }
 @media screen and (max-width: 1000px) {
   .page-container{
-    padding: 0;
+    padding: 1rem;
   }
   .parallel-table{
     display: flex;
