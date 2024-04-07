@@ -5,7 +5,6 @@ import { CgCreditCard } from 'react-icons/cg';
 import { BiSearch } from 'react-icons/bi';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { HiMenuAlt4 } from "react-icons/hi";
-// import logo from '../../../public/Group 11.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Validators <RiArrowDropDownLine /></a>
+                    <a href="#" className="nav-link">Validators <RiArrowDropDownLine style={{ fontSize: "15px" }} /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>
@@ -50,7 +49,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Developers <RiArrowDropDownLine /></a>
+                    <a href="#" className="nav-link">Developers <RiArrowDropDownLine style={{ fontSize: "15px" }} /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>
@@ -58,7 +57,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Resources <RiArrowDropDownLine /></a>
+                    <a href="#" className="nav-link">Resources <RiArrowDropDownLine style={{ fontSize: "15px" }} /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>

@@ -72,8 +72,8 @@ const Graph = () => {
         chart: {
             height: 350,
             type: 'rangeArea',
-            background: '#2b2b2b', // Dark theme background color
-            foreColor: '#ffffff' // Dark theme font color
+            background: '#2b2b2b', 
+            foreColor: '#ffffff' 
         },
         colors: ['#d4526e', '#33b2df', '#d4526e', '#33b2df'],
         dataLabels: { enabled: false },

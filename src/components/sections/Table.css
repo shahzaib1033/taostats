@@ -1,6 +1,4 @@
-/* components/Table.module.css */
 
-/* Table cell styles */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -18,27 +16,9 @@ th,
 tr {
     border-bottom: 1.6px solid gray;
 }
-
-/* Scrollbar styling */
-.table::-webkit-scrollbar {
-    width: 10px;
-    /* Width of the scrollbar */
+.sectionChanges{
+    color: greenyellow;
 }
-
-.table::-webkit-scrollbar-thumb {
-    background-color: #333333;
-    /* Scrollbar thumb color */
-    border-radius: 5px;
-    /* Border radius of the thumb */
-}
-
-.table::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-    /* Scrollbar track color */
-    border-radius: 5px;
-    /* Border radius of the track */
-}
-
 @media screen and (max-width: 500px) {
 table{
 width: max-content;
