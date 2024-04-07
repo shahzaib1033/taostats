@@ -51,7 +51,9 @@ width: 100%;
   }
 
     .latest-blocks-table{
-      /* width: max-content; */
       overflow-x: auto;
     }
 }
+
+
+

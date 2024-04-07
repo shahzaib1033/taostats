@@ -32,7 +32,8 @@ const Page = () => {
         <Graph></Graph>
         <Graph></Graph>
       </div>
-      <div className="latest-blocks-table">
+       <div className="latest-blocks-table">
+         <h3>Table 3</h3>
         <SingleTable></SingleTable>
 
       </div>

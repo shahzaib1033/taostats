@@ -4,10 +4,8 @@
 table {
     border-collapse: collapse;
     width: 100%;
-    /* You can remove this line if you want the table to take up the full width of its container */
     color: whitesmoke;
     overflow-x: auto !important;
-    /* This line is fine if you want horizontal scrolling */
 }
 
 th,
@@ -21,16 +19,43 @@ tr {
     border-bottom: 1.6px solid gray;
 }
 
-@media screen and (max-width: 560px) {
-    table {
-        width: max-content !important;
+/* Scrollbar styling */
+.table::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+.table::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    /* Scrollbar thumb color */
+    border-radius: 5px;
+    /* Border radius of the thumb */
+}
+
+.table::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    /* Scrollbar track color */
+    border-radius: 5px;
+    /* Border radius of the track */
+}
+
+@media screen and (max-width: 500px) {
+table{
+width: max-content;
+}
+    th,
+    td {
+        font-size: small;
     }
 }
 
 @media screen and (max-width: 820px) {
-
-    /* Update the class selector to target the table element */
     .table {
         width: max-content !important;
+    }
+
+    th,
+    td {
+        font-size: small;
     }
 }
