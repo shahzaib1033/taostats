@@ -10,6 +10,7 @@
 .navbar-header {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -23,6 +24,7 @@
     border: none;
     cursor: pointer;
     fill: white;
+    display: none;
 }
 
 .navbar-nav {
@@ -54,7 +56,23 @@
     align-items: center;
     outline: none;
     border: none;
-    width: 315px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.input {
+    position: relative;
+    cursor: text;
+    height: 30px;
+    background: #2E2E2E;
+    padding: 13px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 100%;
     margin-right: 10px;
 }
 
@@ -64,6 +82,11 @@
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    gap: 5px;
 }
 
 .nav-link:hover {
@@ -75,7 +98,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left:25%;  
     background-color: #333;
     padding: 10px 0;
     z-index: 1000;
@@ -100,4 +123,40 @@
 
 .dropdown-menu a:hover {
     background-color: #555;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .navbar{
+            flex-wrap: wrap;
+    }
+    .active {
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  .navbar-nav  {
+        display: none;
+    }
+    .nav-item{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+        &:hover{
+            background-color: #000000;
+        }
+       
+    }
+        .logo img {
+            width: 100%;
+        }
+    .hamburger-btn{
+        display: block;
+        cursor: pointer;
+    }
 }

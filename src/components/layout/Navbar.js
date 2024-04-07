@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from 'react';
-import './Navbar.module.css'; 
+import './Navbar.css'; 
 import { CgCreditCard } from 'react-icons/cg';
 import { BiSearch } from 'react-icons/bi';
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { HiMenuAlt4 } from "react-icons/hi";
 // import logo from '../../../public/Group 11.png';
 
 const Navbar = () => {
@@ -10,6 +12,7 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+        console.log(isOpen)
     };
 
     return (
@@ -18,22 +21,20 @@ const Navbar = () => {
                 <div className="logo">
                     <img src="https://res.cloudinary.com/dvgvsqeeq/image/upload/v1712419189/v82f53063gg8ff1elbfi.svg" alt="Logo"/>
                 </div>
-                {/* <button className="hamburger-btn" onClick={toggleMenu}>
-            <svg viewBox="0 0 100 80" width="40" height="40">
-              <rect width="100" height="20"></rect>
-              <rect y="30" width="100" height="20"></rect>
-              <rect y="60" width="100" height="20"></rect>
-            </svg>
-          </button> */}
-                <label class="nav-input" htmlFor="searchInput">
+              
+                <label className="nav-input" htmlFor="searchInput">
                     <BiSearch />
-                    <input type="text" className="nav-input" id="searchInput" placeholder="Search by Address, Validator or Txn Hash" />
+                    <input type="text" className="input" id="searchInput" placeholder="Search by Address, Validator or Txn Hash" />
                 </label>
+                <button className="hamburger-btn" onClick={toggleMenu}>
+                    <HiMenuAlt4 style={{ fontSize: "35px" }} />
+                </button>
+                
             </div>
-            <ul className="navbar-nav" id="navbar-nav">
+            <ul className={`navbar-nav ${isOpen?"active":''}`} id="navbar-nav">
 
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Subnets</a>
+                    <a href="#" className="nav-link">Subnets <RiArrowDropDownLine style={{ fontSize: "15px" }} /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>
@@ -41,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Validators</a>
+                    <a href="#" className="nav-link">Validators <RiArrowDropDownLine /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>
@@ -49,7 +50,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Developers</a>
+                    <a href="#" className="nav-link">Developers <RiArrowDropDownLine /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>
@@ -57,7 +58,7 @@ const Navbar = () => {
                     </ul>
                 </span>
                 <span className="nav-item">
-                    <a href="#" className="nav-link">Resources</a>
+                    <a href="#" className="nav-link">Resources <RiArrowDropDownLine /></a>
                     <ul className="dropdown-menu">
                         <span><a href="#">Option 1</a></span>
                         <span><a href="#">Option 2</a></span>

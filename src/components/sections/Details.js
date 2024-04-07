@@ -1,6 +1,6 @@
 "use client";
 import { CgChevronUpR } from 'react-icons/cg';
-import './Details.module.css';
+import './Details.css';
 export default function Details() {
   
         const data = [
@@ -59,16 +59,16 @@ export default function Details() {
               </div>
           </div>
           <div className="secondSectionOfDetails">
-              {rows.map((row, rowIndex) => (
-                  <div key={rowIndex} className='row-contianer' style={{ display: "flex", marginBottom: "10px" }}>
-                      {row.map((item, index) => (
-                          <div className='semi-container' key={index} style={{ marginRight: "20px" }}>
-                              <div className='itemOfSecondSection'>{item.title}</div>
-                              <div>{item.value}</div>
+              {data.map((row, rowIndex) => (
+                //   <div key={rowIndex} className='row-contianer' style={{ display: "flex", marginBottom: "10px" }}>
+                //       {row.map((item, index) => (
+                          <div className='semi-container' key={rowIndex} style={{ marginRight: "20px" }}>
+                              <div className='itemOfSecondSection'>{row.title}</div>
+                              <div>{row.value}</div>
                           </div>
                       ))}
-                  </div>
-              ))}
+                  {/* </div> 
+              ))} */}
           </div>
       </div>  )
 }

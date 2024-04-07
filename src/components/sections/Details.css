@@ -1,0 +1,99 @@
+.secondSectionOfDetails {
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+}
+
+.itemOfSecondSection {
+    color: gray;
+    font-size: small;
+}
+
+.MidOfprice {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.precentage {
+    color: #95EE5F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.icon {
+    background-color: greenyellow;
+    color: gray;
+
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    flex-direction: column;
+}
+
+.lightText {
+    color: gray;
+    font-size: 13px;
+}
+
+.detailsSection {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+@media screen and (max-width:900px) {
+    .detailsSection {
+        padding: 0px;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+.MidOfprice {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+    .pricing {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .secondSectionOfDetails {
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 40px; */
+    }
+
+    .detailsSection {
+        padding: 20px;
+        /* flex-direction: column-reverse;
+              gap: 40px; */
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    .secondSectionOfDetails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detailsSection {
+        padding: 20px;
+        
+    }
+        .MidOfprice  {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .logo {
+            font-size: large;
+        }
+
+}

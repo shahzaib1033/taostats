@@ -1,7 +1,5 @@
-// components/Table.js
-
 import React from 'react';
-import styles from './Table.mudule.css'; // Import the CSS module
+import styles from './Table.css'; 
 import '../../app/styles.css'
 const Table = () => {
     const data = [
@@ -14,7 +12,7 @@ const Table = () => {
     return (
         <table className={styles.table}>
             <thead>
-                <tr>
+                <tr> 
                     <th>ID</th>
                     <th>Name</th>
                     <th>Created At</th>

@@ -45,6 +45,8 @@
 
 .market-stats {
     display: flex;
+    margin: auto;
+    /* margin-top: 1.5em; */
 }
 
 .market-cap,
@@ -71,8 +73,7 @@
     /* Green */
 }
 
-.buy-button,
-.stake-button {
+.buy-button {
     color: white;
     background-color: #1F1F1F;
     /* Blue */
@@ -82,10 +83,58 @@
     margin-right: 10px;
 }
 
+.stake-button {
+    background-color: #e8dfdf !important;
+    color: rgb(32, 31, 31);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-right: 10px;
+}
+
+.tableSection {
+    width: 100%;
+}
+
 .buy-button:hover,
 .stake-button:hover,
 .corcel-link:hover {
     background-color: #D9D9D9;
     /* Darker Green */
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .header-content {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .header {
+        font-size: small;
+    }
+
+    .header-left {
+        flex-wrap: wrap;
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tableSection {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+}
+
+@media screen and (max-width: 533px) {
+    .market-stats {
+            margin-top: 1.5em;
+        }
 }

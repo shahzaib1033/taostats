@@ -1,7 +1,8 @@
 "use client";
 import dynamic from 'next/dynamic';
 
-const ApexChart = dynamic(() => import('react-apexcharts'), { ssr: false }); import './Graph.module.css'
+const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
+import './Graph.css'
 const Graph = () => {
 
     const series = [
@@ -84,7 +85,7 @@ const Graph = () => {
 
     return (
         <div className="dark-graph">
-            <ApexChart options={options} series={series} type="rangeArea" height={350} />
+            <ReactApexChart options={options} series={series} type="rangeArea" height={350} />
         </div>
     );
 };

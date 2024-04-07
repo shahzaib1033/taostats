@@ -1,6 +1,6 @@
 
 import React from 'react';
-import  './Header.module.css'; 
+import  './Header.css'; 
 
 const Header = () => {
     return (
@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
                 <div className="header-right">
                     <a href="https://corcel.io" className="corcel-link">Visit Corcel.io</a>
-                    <button className="buy-button">Buy</button>
+                    <button className="buy-button">$ Buy</button>
                     <button className="stake-button">Stake</button>
                 </div>
             </div>

@@ -1,0 +1,36 @@
+/* components/Table.module.css */
+
+/* Table cell styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* You can remove this line if you want the table to take up the full width of its container */
+    color: whitesmoke;
+    overflow-x: auto !important;
+    /* This line is fine if you want horizontal scrolling */
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th,
+tr {
+    border-bottom: 1.6px solid gray;
+}
+
+@media screen and (max-width: 560px) {
+    table {
+        width: max-content !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    /* Update the class selector to target the table element */
+    .table {
+        width: max-content !important;
+    }
+}

@@ -1,7 +1,5 @@
-// components/Table.js
-
 import React from 'react';
-import './Table.mudule.css'; // Import the CSS file
+import './Table.css'; 
 import '../../app/styles.css'
 const SingleTable = () => {
     const data = [
@@ -14,7 +12,7 @@ const SingleTable = () => {
     ];
 
     return (
-        <table>
+        <table className='table'>
             <thead>
                 <tr>
                     <th>Height</th>
